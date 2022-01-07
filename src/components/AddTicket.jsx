@@ -36,6 +36,7 @@ function handleClick(e, person, ticket) {
         .then((response) => {
           if (response.status === 201) {
             alert("Boleta agregada con éxito");
+            window.location.reload();
           }
         })
         .catch((error) => {
